@@ -33,11 +33,11 @@ const Hero = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm md:text-base text-white/70">
             <a
-              href="mailto:Sejalmishrawork@gmail.com"
+              href="mailto:sidhantmalik02@gmail.com"
               className="flex items-center gap-2 hover:text-white transition-colors"
             >
               <Mail className="w-4 h-4" />
-              Sejalmishrawork@gmail.com
+              sidhantmalik02@gmail.com
             </a>
             <span className="hidden sm:inline">•</span>
             <a
