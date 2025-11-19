@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Github, FileText } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -14,6 +15,8 @@ const Projects = () => {
         "Integrated solar power management for sustainable operation",
         "Published 2 research papers demonstrating system performance",
       ],
+      github: "https://github.com/SidBotVit/RFID-based-Toll-Gate-System",
+      paper: "https://www.researchgate.net/publication/394006425_Prototype_Model_of_Seamless_Highway_Toll_Collection_Using_RFID_and_IoT_Technology",
     },
     {
       title: "Odesa Movie Booking System",
@@ -25,6 +28,7 @@ const Projects = () => {
         "Designed layered architecture for users, movies, shows, and bookings",
         "Developed responsive React frontend integrated with backend APIs",
       ],
+      github: "https://github.com/SidBotVit/BOOK-MY-SHOW",
     },
     {
       title: "Backend API Service",
@@ -75,6 +79,44 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
+                {(project.github || project.paper) && (
+                  <div className="flex gap-2 pt-2 border-t border-border/50">
+                    {project.github && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="flex-1 gap-2"
+                      >
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="w-4 h-4" />
+                          Code
+                        </a>
+                      </Button>
+                    )}
+                    {project.paper && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="flex-1 gap-2"
+                      >
+                        <a
+                          href={project.paper}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FileText className="w-4 h-4" />
+                          Paper
+                        </a>
+                      </Button>
+                    )}
+                  </div>
+                )}
               </Card>
             ))}
           </div>
