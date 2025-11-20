@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 6%;
-    --foreground: 0 0% 85%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 75%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 85%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 75%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 85%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 75%;
 
-    --primary: 0 85% 35%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 45% 25%;
+    --primary-foreground: 0 0% 95%;
     
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 70% 50%;
+    --secondary: 0 0% 6%;
+    --secondary-foreground: 0 35% 40%;
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 0 0% 5%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 0 100% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 60% 30%;
+    --accent-foreground: 0 0% 95%;
 
-    --destructive: 0 85% 45%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 60% 30%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 0 30% 15%;
-    --input: 0 30% 15%;
-    --ring: 0 85% 35%;
+    --border: 0 20% 8%;
+    --input: 0 20% 8%;
+    --ring: 0 45% 25%;
 
     --radius: 0.5rem;
     
     /* Horror theme colors */
-    --hero-gradient-start: 0 0% 4%;
-    --hero-gradient-end: 0 60% 8%;
-    --code-accent: 0 85% 50%;
-    --highlight: 0 100% 55%;
-    --blood: 0 85% 40%;
+    --hero-gradient-start: 0 0% 2%;
+    --hero-gradient-end: 0 40% 4%;
+    --code-accent: 0 60% 35%;
+    --highlight: 0 70% 40%;
+    --blood: 0 55% 25%;
     --shadow: 0 0% 0%;
     --warning: 40 100% 50%;
     
@@ -62,39 +62,39 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 90%;
+    --background: 0 0% 2%;
+    --foreground: 0 0% 70%;
 
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 90%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 70%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 90%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 70%;
 
-    --primary: 0 90% 40%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 50% 22%;
+    --primary-foreground: 0 0% 95%;
 
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 80% 55%;
+    --secondary: 0 0% 5%;
+    --secondary-foreground: 0 40% 35%;
 
-    --muted: 0 0% 8%;
-    --muted-foreground: 0 0% 55%;
+    --muted: 0 0% 4%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 0 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 65% 28%;
+    --accent-foreground: 0 0% 95%;
 
-    --destructive: 0 90% 45%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 65% 28%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 0 30% 12%;
-    --input: 0 30% 12%;
-    --ring: 0 90% 40%;
+    --border: 0 20% 6%;
+    --input: 0 20% 6%;
+    --ring: 0 50% 22%;
     
-    --hero-gradient-start: 0 0% 3%;
-    --hero-gradient-end: 0 70% 10%;
-    --code-accent: 0 90% 55%;
-    --highlight: 0 100% 60%;
-    --blood: 0 90% 45%;
+    --hero-gradient-start: 0 0% 1%;
+    --hero-gradient-end: 0 45% 3%;
+    --code-accent: 0 65% 32%;
+    --highlight: 0 75% 38%;
+    --blood: 0 60% 22%;
     --sidebar-background: 0 0% 4%;
     --sidebar-foreground: 0 0% 90%;
     --sidebar-primary: 0 90% 40%;
@@ -115,8 +115,9 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(0 60% 5% / 0.3) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, hsl(0 40% 5% / 0.3) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, hsl(0 40% 2% / 0.5) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(0 30% 2% / 0.5) 0%, transparent 50%),
+      repeating-linear-gradient(0deg, transparent, transparent 2px, hsl(0 0% 0% / 0.03) 2px, hsl(0 0% 0% / 0.03) 4px);
   }
   
   html {
@@ -141,9 +142,9 @@ All colors MUST be HSL.
     position: absolute;
     inset: 0;
     background: 
-      radial-gradient(circle at 30% 50%, hsl(0 85% 20% / 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 70% 70%, hsl(0 100% 25% / 0.1) 0%, transparent 50%);
-    animation: pulseGlow 4s ease-in-out infinite;
+      radial-gradient(circle at 30% 50%, hsl(0 55% 8% / 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 70% 70%, hsl(0 65% 10% / 0.15) 0%, transparent 50%);
+    animation: pulseGlow 8s ease-in-out infinite;
   }
   
   .horror-font {
@@ -197,12 +198,16 @@ All colors MUST be HSL.
   }
   
   .red-glow {
-    box-shadow: 0 0 20px hsl(0 85% 40% / 0.4), 0 0 40px hsl(0 85% 40% / 0.2);
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 15px hsl(0 55% 20% / 0.3), 0 0 30px hsl(0 55% 15% / 0.2), inset 0 0 30px hsl(0 40% 10% / 0.1);
+    transition: box-shadow 0.4s ease;
   }
   
   .red-glow:hover {
-    box-shadow: 0 0 30px hsl(0 85% 40% / 0.6), 0 0 60px hsl(0 85% 40% / 0.3);
+    box-shadow: 0 0 25px hsl(0 55% 20% / 0.5), 0 0 50px hsl(0 55% 15% / 0.3), inset 0 0 40px hsl(0 40% 10% / 0.15);
+  }
+  
+  .flicker {
+    animation: flicker 3s infinite;
   }
   
   .animate-fade-in-up {
@@ -313,6 +318,27 @@ All colors MUST be HSL.
     50% {
       transform: translateY(10px) scaleY(1.5);
       opacity: 1;
+    }
+  }
+  
+  @keyframes flicker {
+    0%, 100% {
+      opacity: 1;
+    }
+    41%, 43% {
+      opacity: 0.4;
+    }
+    44% {
+      opacity: 1;
+    }
+    61%, 62% {
+      opacity: 0.5;
+    }
+    63% {
+      opacity: 1;
+    }
+    82%, 83% {
+      opacity: 0.6;
     }
   }
 }
