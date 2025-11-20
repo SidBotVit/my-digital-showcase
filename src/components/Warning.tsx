@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Skull } from "lucide-react";
+import { AlertTriangle, Skull } from "lucide-react";
 
 const Warning = ({ onAccept }: { onAccept: () => void }) => {
   const [glitching, setGlitching] = useState(false);
@@ -14,52 +14,55 @@ const Warning = ({ onAccept }: { onAccept: () => void }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
-      <div className="relative max-w-3xl mx-auto p-8 space-y-10 text-center animate-fade-in">
-        <div className="flex justify-center mb-8">
-          <Skull className="w-32 h-32 text-blood animate-pulse flicker" strokeWidth={1.5} />
+      <div className="relative max-w-2xl mx-auto p-8 space-y-8 text-center animate-fade-in">
+        <div className="flex justify-center mb-6">
+          <Skull className="w-24 h-24 text-primary animate-pulse" />
         </div>
 
         <h1 
-          className="text-6xl md:text-8xl font-bold nosifer-font text-blood blood-drip"
-          data-text="ACCESS RESTRICTED"
+          className="text-5xl md:text-7xl font-bold nosifer-font text-primary blood-drip"
+          data-text="⚠ WARNING ⚠"
         >
-          ACCESS RESTRICTED
+          ⚠ WARNING ⚠
         </h1>
 
-        <div className="space-y-6 text-foreground/70 max-w-2xl mx-auto">
-          <div className="bg-card/30 border border-blood/20 rounded-lg p-8 space-y-4 red-glow backdrop-blur-sm">
-            <p className="text-lg leading-relaxed font-light tracking-wide">
-              Beyond this threshold lies code forged in darkness. Systems that operate in shadows. 
-              Logic that questions its own existence.
+        <div className="space-y-4 text-foreground/90">
+          <p className="text-xl md:text-2xl font-semibold flex items-center justify-center gap-2">
+            <AlertTriangle className="w-6 h-6 text-warning animate-pulse" />
+            PROCEED AT YOUR OWN RISK
+            <AlertTriangle className="w-6 h-6 text-warning animate-pulse" />
+          </p>
+          
+          <div className="bg-card border-2 border-primary/30 rounded-lg p-6 space-y-3 red-glow">
+            <p className="text-lg">
+              You are about to enter the digital realm of a developer whose code is as dark as their sense of humor.
             </p>
-            <p className="text-xl text-blood/90 font-medium tracking-wider">
-              The patterns you'll witness cannot be unseen.
+            <p className="text-lg text-primary font-semibold">
+              Backend systems that never sleep. Algorithms that consume your soul.
             </p>
-            <p className="text-lg leading-relaxed font-light tracking-wide">
-              Each function optimized. Every algorithm refined. Nothing escapes the void.
+            <p className="text-lg">
+              This portfolio may contain: excessive optimization, ruthless debugging, and an unhealthy obsession with clean code.
             </p>
           </div>
 
-          <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground/50 font-mono">
-            <span className="flicker">◆</span>
-            <span>NEURAL INTERFACE DETECTED</span>
-            <span className="flicker">◆</span>
-          </div>
+          <p className="text-sm text-muted-foreground italic">
+            * No developers were harmed in the making of this portfolio (physically)
+          </p>
         </div>
 
         <Button
           onClick={handleAccept}
           size="lg"
-          className={`bg-blood/80 hover:bg-blood text-primary-foreground font-bold text-xl px-16 py-7 red-glow border border-blood/40 ${
+          className={`bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl px-12 py-6 red-glow ${
             glitching ? 'glitch' : ''
           }`}
-          data-text="ENTER THE VOID"
+          data-text="I ACCEPT THE RISK"
         >
-          ENTER THE VOID
+          I ACCEPT THE RISK
         </Button>
 
-        <p className="text-xs text-muted-foreground/40 mt-6 font-mono tracking-widest">
-          &gt; PROCEEDING REQUIRES ACKNOWLEDGMENT OF CONSEQUENCES
+        <p className="text-xs text-muted-foreground mt-4">
+          Click to enter... if you dare
         </p>
       </div>
     </div>
