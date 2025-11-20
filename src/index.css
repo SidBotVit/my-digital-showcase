@@ -8,104 +8,101 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 40% 10%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 40% 10%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 10%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 85%;
 
-    --primary: 220 70% 20%;
+    --primary: 0 85% 35%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 220 60% 96%;
-    --secondary-foreground: 220 70% 20%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 70% 50%;
 
-    --muted: 220 20% 96%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 190 70% 45%;
+    --accent: 0 100% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 85% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 90%;
-    --input: 220 20% 90%;
-    --ring: 220 70% 20%;
+    --border: 0 30% 15%;
+    --input: 0 30% 15%;
+    --ring: 0 85% 35%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
     
-    /* Custom portfolio colors */
-    --hero-gradient-start: 220 70% 15%;
-    --hero-gradient-end: 190 70% 40%;
-    --code-accent: 190 70% 45%;
-    --highlight: 190 70% 50%;
+    /* Horror theme colors */
+    --hero-gradient-start: 0 0% 4%;
+    --hero-gradient-end: 0 60% 8%;
+    --code-accent: 0 85% 50%;
+    --highlight: 0 100% 55%;
+    --blood: 0 85% 40%;
+    --shadow: 0 0% 0%;
+    --warning: 40 100% 50%;
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 0 85% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 70% 50%;
+    --sidebar-border: 0 30% 15%;
+    --sidebar-ring: 0 85% 35%;
   }
 
   .dark {
-    --background: 220 40% 8%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 90%;
 
-    --card: 220 35% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 90%;
 
-    --popover: 220 35% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 90%;
 
-    --primary: 190 70% 50%;
-    --primary-foreground: 220 40% 8%;
+    --primary: 0 90% 40%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 30% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 80% 55%;
 
-    --muted: 220 30% 15%;
-    --muted-foreground: 220 15% 60%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 55%;
 
-    --accent: 190 70% 45%;
+    --accent: 0 100% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 50%;
+    --destructive: 0 90% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 30% 20%;
-    --input: 220 30% 20%;
-    --ring: 190 70% 50%;
+    --border: 0 30% 12%;
+    --input: 0 30% 12%;
+    --ring: 0 90% 40%;
     
-    --hero-gradient-start: 220 60% 12%;
-    --hero-gradient-end: 190 60% 25%;
-    --code-accent: 190 70% 50%;
-    --highlight: 190 70% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --hero-gradient-start: 0 0% 3%;
+    --hero-gradient-end: 0 70% 10%;
+    --code-accent: 0 90% 55%;
+    --highlight: 0 100% 60%;
+    --blood: 0 90% 45%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 90% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 80% 55%;
+    --sidebar-border: 0 30% 12%;
+    --sidebar-ring: 0 90% 40%;
   }
 }
 
@@ -116,7 +113,10 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(0 60% 5% / 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(0 40% 5% / 0.3) 0%, transparent 50%);
   }
   
   html {
@@ -126,11 +126,83 @@ All colors MUST be HSL.
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    animation: gradientShift 3s ease infinite;
+    background-size: 200% 200%;
   }
   
   .hero-gradient {
     background: linear-gradient(135deg, hsl(var(--hero-gradient-start)), hsl(var(--hero-gradient-end)));
+    position: relative;
+  }
+  
+  .hero-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 30% 50%, hsl(0 85% 20% / 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 70%, hsl(0 100% 25% / 0.1) 0%, transparent 50%);
+    animation: pulseGlow 4s ease-in-out infinite;
+  }
+  
+  .horror-font {
+    font-family: 'Creepster', cursive;
+  }
+  
+  .nosifer-font {
+    font-family: 'Nosifer', cursive;
+  }
+  
+  .glitch {
+    position: relative;
+    animation: glitch 3s infinite;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch::before {
+    animation: glitchTop 2s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    text-shadow: 2px 0 hsl(0 100% 50%);
+  }
+  
+  .glitch::after {
+    animation: glitchBottom 2.5s infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    text-shadow: -2px 0 hsl(200 100% 50%);
+  }
+  
+  .blood-drip {
+    position: relative;
+  }
+  
+  .blood-drip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(to bottom, hsl(0 85% 40%), transparent);
+    animation: drip 3s ease-in-out infinite;
+  }
+  
+  .red-glow {
+    box-shadow: 0 0 20px hsl(0 85% 40% / 0.4), 0 0 40px hsl(0 85% 40% / 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .red-glow:hover {
+    box-shadow: 0 0 30px hsl(0 85% 40% / 0.6), 0 0 60px hsl(0 85% 40% / 0.3);
   }
   
   .animate-fade-in-up {
@@ -157,6 +229,89 @@ All colors MUST be HSL.
       opacity: 0;
     }
     to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glitch {
+    0%, 100% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+  }
+  
+  @keyframes glitchTop {
+    0%, 100% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-3px, -3px);
+    }
+    40% {
+      transform: translate(-3px, -3px);
+    }
+    60% {
+      transform: translate(3px, 3px);
+    }
+    80% {
+      transform: translate(3px, 3px);
+    }
+  }
+  
+  @keyframes glitchBottom {
+    0%, 100% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(3px, 3px);
+    }
+    40% {
+      transform: translate(3px, 3px);
+    }
+    60% {
+      transform: translate(-3px, -3px);
+    }
+    80% {
+      transform: translate(-3px, -3px);
+    }
+  }
+  
+  @keyframes gradientShift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes drip {
+    0%, 100% {
+      transform: translateY(0) scaleY(1);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(10px) scaleY(1.5);
       opacity: 1;
     }
   }
