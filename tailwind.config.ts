@@ -48,6 +48,8 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         highlight: "hsl(var(--highlight))",
+        blood: "hsl(var(--blood))",
+        warning: "hsl(var(--warning))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
