@@ -44,11 +44,11 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold gradient-text">Projects</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light gradient-text">Projects</h2>
             <p className="text-lg text-muted-foreground">
               Building real-world solutions with modern technologies
             </p>
@@ -58,7 +58,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="p-6 space-y-4 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 flex flex-col"
+                className="p-6 space-y-4 minimal-card flex flex-col"
               >
                 <div className="space-y-3 flex-1">
                   <h3 className="text-xl font-bold">{project.title}</h3>

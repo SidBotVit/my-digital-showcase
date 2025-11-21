@@ -36,11 +36,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-secondary/30">
+    <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold gradient-text">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light gradient-text">
               Technical Skills
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -52,12 +52,12 @@ const Skills = () => {
             {skillCategories.map((category, index) => (
               <Card
                 key={index}
-                className="p-6 space-y-4 hover:shadow-lg transition-all duration-300 border-border/50"
+                className="p-6 space-y-4 minimal-card"
               >
-                <h3 className="text-lg font-bold text-foreground">{category.category}</h3>
+                <h3 className="text-lg font-medium text-foreground">{category.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, idx) => (
-                    <Badge key={idx} variant="outline" className={category.color}>
+                    <Badge key={idx} variant="secondary" className="font-normal">
                       {skill}
                     </Badge>
                   ))}
@@ -66,31 +66,31 @@ const Skills = () => {
             ))}
           </div>
 
-          <Card className="p-8 bg-gradient-to-br from-primary/5 to-accent/5 border-border/50">
+          <Card className="p-8 bg-gradient-to-br from-pastel-blue/30 to-pastel-pink/30 border-border/50">
             <div className="space-y-4 text-center">
-              <h3 className="text-2xl font-bold">Additional Qualifications</h3>
+              <h3 className="text-2xl font-medium">Additional Qualifications</h3>
               <div className="grid md:grid-cols-2 gap-4 text-left max-w-3xl mx-auto">
-                <div className="flex items-start gap-2">
-                  <span className="text-accent mt-1">✓</span>
-                  <span className="text-foreground/80">
+                <div className="flex items-start gap-3">
+                  <span className="text-primary mt-1">✓</span>
+                  <span className="text-muted-foreground">
                     Strong understanding of Data Structures & Algorithms
                   </span>
                 </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-accent mt-1">✓</span>
-                  <span className="text-foreground/80">
+                <div className="flex items-start gap-3">
+                  <span className="text-primary mt-1">✓</span>
+                  <span className="text-muted-foreground">
                     Proficient in Java backend development with Spring Boot
                   </span>
                 </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-accent mt-1">✓</span>
-                  <span className="text-foreground/80">
+                <div className="flex items-start gap-3">
+                  <span className="text-primary mt-1">✓</span>
+                  <span className="text-muted-foreground">
                     Familiar with full-stack fundamentals using React
                   </span>
                 </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-accent mt-1">✓</span>
-                  <span className="text-foreground/80">
+                <div className="flex items-start gap-3">
+                  <span className="text-primary mt-1">✓</span>
+                  <span className="text-muted-foreground">
                     Quick learner, effective communicator, team collaborator
                   </span>
                 </div>
