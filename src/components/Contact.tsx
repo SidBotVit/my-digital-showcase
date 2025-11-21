@@ -31,14 +31,14 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold gradient-text">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light gradient-text">
               Get In Touch
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               I'm actively seeking SDE roles and internships. Feel free to reach out if you'd like
               to discuss opportunities or just connect!
             </p>
@@ -50,7 +50,7 @@ const Contact = () => {
               return (
                 <Card
                   key={index}
-                  className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border/50"
+                  className="p-6 minimal-card"
                 >
                   <a
                     href={method.href}
@@ -58,12 +58,12 @@ const Contact = () => {
                     rel={method.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="flex items-center gap-4 group"
                   >
-                    <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                      <Icon className="w-6 h-6 text-accent" />
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-pastel-peach to-pastel-pink flex items-center justify-center">
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">
                       <p className="text-sm text-muted-foreground">{method.label}</p>
-                      <p className="font-medium text-foreground group-hover:text-accent transition-colors">
+                      <p className="font-medium text-foreground group-hover:text-primary transition-colors">
                         {method.value}
                       </p>
                     </div>
@@ -73,7 +73,7 @@ const Contact = () => {
             })}
           </div>
 
-          <Card className="p-8 text-center space-y-6 bg-gradient-to-br from-primary/5 to-accent/5 border-border/50">
+          <Card className="p-8 text-center space-y-6 bg-gradient-to-br from-pastel-blue/30 to-pastel-mint/30 border-border/50">
             <div className="space-y-2">
               <h3 className="text-2xl font-bold">Download My Resume</h3>
               <p className="text-muted-foreground">

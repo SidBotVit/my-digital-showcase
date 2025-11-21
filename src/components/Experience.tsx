@@ -29,11 +29,11 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-secondary/30">
+    <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold gradient-text">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light gradient-text">
               Experience
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -45,11 +45,11 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <Card
                 key={index}
-                className="p-6 md:p-8 space-y-4 hover:shadow-lg transition-all duration-300 border-border/50"
+                className="p-6 md:p-8 space-y-4 minimal-card"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Briefcase className="w-6 h-6 text-accent" />
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-pastel-mint to-pastel-lavender flex items-center justify-center flex-shrink-0">
+                    <Briefcase className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex flex-wrap items-start justify-between gap-2">

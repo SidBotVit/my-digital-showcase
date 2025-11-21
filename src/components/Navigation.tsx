@@ -61,7 +61,7 @@ const Navigation = () => {
               </a>
             ))}
             <ThemeToggle />
-            <Button asChild variant="default" size="sm" className="gap-2">
+            <Button asChild variant="default" size="sm" className="gap-2 rounded-full">
               <a href="/siddhant-malik-resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="w-4 h-4" />
                 Resume
@@ -95,7 +95,7 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button asChild variant="default" size="sm" className="w-full gap-2">
+            <Button asChild variant="default" size="sm" className="w-full gap-2 rounded-full">
               <a href="/siddhant-malik-resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="w-4 h-4" />
                 Download Resume
